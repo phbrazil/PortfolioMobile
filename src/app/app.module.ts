@@ -12,6 +12,7 @@ import { HabilidadesPage } from '../pages/habilidades/habilidades';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DocumentViewer } from '@ionic-native/document-viewer';
+import { FileOpener } from '@ionic-native/file-opener';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { DocumentViewer } from '@ionic-native/document-viewer';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DocumentViewer
+    DocumentViewer,
+    FileOpener
   ]
 })
 export class AppModule {}
