@@ -13,6 +13,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DocumentViewer } from '@ionic-native/document-viewer';
 import { FileOpener } from '@ionic-native/file-opener';
+import { FileChooser } from '@ionic-native/file-chooser';
+import { FilePath } from '@ionic-native/file-path';
+import { File } from '@ionic-native/file';
 
 
 @NgModule({
@@ -42,7 +45,10 @@ import { FileOpener } from '@ionic-native/file-opener';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DocumentViewer,
-    FileOpener
+    FileOpener,
+    FileChooser,
+    FilePath,
+    File
   ]
 })
 export class AppModule {}
