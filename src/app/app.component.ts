@@ -25,7 +25,7 @@ export class MyApp {
     // used for an example of   ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Experiencia', component: ExperienciaPage },
+      { title: 'Experiência', component: ExperienciaPage },
       { title: 'Educacao', component: EducacaoPage },
       { title: 'Cursos', component: CursosPage },
       { title: 'Habilidades', component: HabilidadesPage }
