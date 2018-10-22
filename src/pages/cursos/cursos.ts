@@ -31,7 +31,6 @@ export class CursosPage {
     this.file.checkDir(this.file.dataDirectory, 'assets').
     then(_ => alert('Diretório existe')).catch(err => alert('Diretório não existe'));
 
-
     this.documentViewer.viewDocument(path, 'application/pdf', options);
 
     //this.fileOpener.open(path, 'application/pdf').then(value => {
