@@ -11,11 +11,12 @@ import { HabilidadesPage } from '../pages/habilidades/habilidades';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { DocumentViewer } from '@ionic-native/document-viewer';
 import { FileOpener } from '@ionic-native/file-opener';
 import { FileChooser } from '@ionic-native/file-chooser';
 import { FilePath } from '@ionic-native/file-path';
 import { File } from '@ionic-native/file';
+import { FileTransfer } from '@ionic-native/file-transfer';
+import { DocumentViewer } from '@ionic-native/document-viewer';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { File } from '@ionic-native/file';
     FileOpener,
     FileChooser,
     FilePath,
-    File
+    File,
+    FileTransfer
   ]
 })
 export class AppModule {}
