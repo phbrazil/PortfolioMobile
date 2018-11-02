@@ -2,7 +2,7 @@
 <widget id="PHB" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Paulo Portfolio</name>
     <description>Projeto do professor Ramon.</description>
-    <author email="pauloh2012sul@gmail.com" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <author email="killuminatti08@hotmail.com" href="http://ionicframework.com/">Ionic Framework Team</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

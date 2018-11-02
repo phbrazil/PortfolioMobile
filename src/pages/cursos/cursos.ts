@@ -41,8 +41,8 @@ export class CursosPage {
 
     this.documentViewer.viewDocument('assets/Certificados/CERTIFICADO_SENAI.pdf','application/pdf',{});
     
-    //this.file.checkDir(this.file.dataDirectory, path).
-    //then(_ => alert('Diretório existe')).catch(err => alert('Diretório '+path+' não existe'));
+    this.file.checkDir(this.file.dataDirectory, 'assets/Certificados/CERTIFICADO_SENAI.pdf').
+    then(_ => alert('Diretório existe')).catch(err => alert('Diretório não existe'));
 
 
     //})
