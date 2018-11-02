@@ -39,7 +39,7 @@ export class CursosPage {
     //transfer.download('http://www.pauloportfolio.com/Certificados/CERTIFICADO_SENAI.pdf',path+'myFile.pdf').then(entry =>{
     //let url = entry.toUrl();
 
-    this.documentViewer.viewDocument(path,'application/pdf',{});
+    this.documentViewer.viewDocument('assets/Certificados/CERTIFICADO_SENAI.pdf','application/pdf',{});
     
     //this.file.checkDir(this.file.dataDirectory, path).
     //then(_ => alert('Diretório existe')).catch(err => alert('Diretório '+path+' não existe'));

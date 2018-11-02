@@ -31,18 +31,7 @@ export class ContatosPage {
 
         }
 
-        //async callNumber():Promise<any>{
 
-
-
-        //try{
-
-        // await this.call.callNumber("11981997228", true);
-        //.then(res => console.log('Abrindo Discagem', res))
-        //.catch(err => console.log('Erro abrindo discagem', err));
-
-        //}catch(e){
-        //        console.error(e);
 
 
         
