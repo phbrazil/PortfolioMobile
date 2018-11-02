@@ -27,31 +27,32 @@ export class CursosPage {
     const options: DocumentViewerOptions = {
       title: 'Curso SENAI'
     }
-    let path = null;
+    let path = 'assets/Certificados/CERTIFICADO_SENAI.pdf'
 
     if(this.platform.is('ios')){
-      path=this.file.documentsDirectory;
+      //path=this.file.documentsDirectory;
     }else {
-      path = this.file.dataDirectory;
+      //path = this.file.dataDirectory;
 
     }
     const transfer = this.transfer.create();
-    transfer.download('http://www.pauloportfolio.com/Certificados/CERTIFICADO_SENAI.pdf',path+'myFile.pdf').then(entry =>{
-    let url = entry.toUrl();
-    this.documentViewer.viewDocument(url,'application/pdf',{});
+    //transfer.download('http://www.pauloportfolio.com/Certificados/CERTIFICADO_SENAI.pdf',path+'myFile.pdf').then(entry =>{
+    //let url = entry.toUrl();
+
+    this.documentViewer.viewDocument(path,'application/pdf',{});
+    
+    //this.file.checkDir(this.file.dataDirectory, path).
+    //then(_ => alert('Diretório existe')).catch(err => alert('Diretório '+path+' não existe'));
 
 
-    })
+    //})
 
     
     
 
-    //window.open(path);
     //var path = 'http://www.pauloportfolio.com/Certificados/CERTIFICADO_SENAI.pdf';
     //this.fileOpener.open(resolvedFilePath, 'application/pdf').then(value => {
 
-    //this.file.checkDir(this.file.dataDirectory, path).
-    //then(_ => alert('Diretório existe')).catch(err => alert('Diretório '+path+' não existe'));
 
     
 

@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="contatos"></ion-icon>
+        </button>
+        <ion-title>Contatos</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-item>
+        <button ion-button round (click)="ligarCelular()">Ligar no celular</button>
+    </ion-item>
+    <ion-item>
+        <button ion-button round (click)="ligarFixo()">Ligar no fixo</button>
+    </ion-item>
+
+
+    <button ion-button secondary menuToggle>Ver Menu</button>
+</ion-content>

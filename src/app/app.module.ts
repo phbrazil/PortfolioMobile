@@ -8,6 +8,7 @@ import { ExperienciaPage } from '../pages/experiencia/experiencia';
 import { EducacaoPage } from '../pages/educacao/educacao';
 import { CursosPage } from '../pages/cursos/cursos';
 import { HabilidadesPage } from '../pages/habilidades/habilidades';
+import { ContatosPage } from '../pages/contatos/contatos';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,6 +18,7 @@ import { FilePath } from '@ionic-native/file-path';
 import { File } from '@ionic-native/file';
 import { FileTransfer } from '@ionic-native/file-transfer';
 import { DocumentViewer } from '@ionic-native/document-viewer';
+import { CallNumber } from '@ionic-native/call-number';
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { DocumentViewer } from '@ionic-native/document-viewer';
     ExperienciaPage,
     EducacaoPage,
     CursosPage,
-    HabilidadesPage
+    HabilidadesPage,
+    ContatosPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { DocumentViewer } from '@ionic-native/document-viewer';
     ExperienciaPage,
     EducacaoPage,
     CursosPage,
-    HabilidadesPage
+    HabilidadesPage,
+    ContatosPage
   ],
   providers: [
     StatusBar,
@@ -50,7 +54,8 @@ import { DocumentViewer } from '@ionic-native/document-viewer';
     FileChooser,
     FilePath,
     File,
-    FileTransfer
+    FileTransfer,
+    CallNumber
   ]
 })
 export class AppModule {}

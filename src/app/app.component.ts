@@ -8,6 +8,7 @@ import { ExperienciaPage } from '../pages/experiencia/experiencia';
 import { EducacaoPage } from '../pages/educacao/educacao';
 import { CursosPage } from '../pages/cursos/cursos';
 import { HabilidadesPage } from '../pages/habilidades/habilidades';
+import { ContatosPage } from '../pages/contatos/contatos';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,9 +27,11 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Experiência', component: ExperienciaPage },
-      { title: 'Educacao', component: EducacaoPage },
+      { title: 'Educação', component: EducacaoPage },
       { title: 'Cursos', component: CursosPage },
-      { title: 'Habilidades', component: HabilidadesPage }
+      { title: 'Habilidades', component: HabilidadesPage },
+      { title: 'Contatos', component: ContatosPage }
+
     ];
 
   }
