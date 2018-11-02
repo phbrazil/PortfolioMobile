@@ -19,6 +19,7 @@ import { File } from '@ionic-native/file';
 import { FileTransfer } from '@ionic-native/file-transfer';
 import { DocumentViewer } from '@ionic-native/document-viewer';
 import { CallNumber } from '@ionic-native/call-number';
+import { SMS } from '@ionic-native/sms';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { CallNumber } from '@ionic-native/call-number';
     FilePath,
     File,
     FileTransfer,
-    CallNumber
+    CallNumber,
+    SMS
   ]
 })
 export class AppModule {}

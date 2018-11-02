@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="PHB" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="paulo.bezerra" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Paulo Portfolio</name>
     <description>Projeto do professor Ramon.</description>
     <author email="killuminatti08@hotmail.com" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -90,6 +90,7 @@
     <plugin name="cordova-plugin-file" spec="6.0.1" />
     <plugin name="cordova-plugin-file-transfer" spec="1.7.1" />
     <plugin name="mx.ferreyra.callnumber" spec="~0.0.2" />
-    <engine name="android" spec="7.1.1" />
     <engine name="ios" spec="4.5.5" />
+    <engine name="android" spec="~7.1.1" />
+    <plugin name="cordova-sms-plugin" spec="0.1.13" />
 </widget>
