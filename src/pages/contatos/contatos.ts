@@ -15,14 +15,16 @@ export class ContatosPage {
 
         private recado: FormGroup;
 
-        constructor(private formBuilder: FormBuilder, private sms: SMS, public navCtrl: NavController, private call: CallNumber) {
+        constructor(private formBuilder: FormBuilder, private sms: SMS, 
+                public navCtrl: NavController, private call: CallNumber) {
                 this.recado = this.formBuilder.group({
                         remetente: ['', Validators.required],
                         mensagem: [''],
                 });
         }
         enviarSMS() {
-                this.sms.send('11981997228', this.recado.value['mensagem']);
+                this.sms.send('11981997228', this.recado.value['mensagem']+
+                " Atenciosamente: "+this.recado.value['remetente']);
 
         }
 
