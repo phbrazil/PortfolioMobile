@@ -9,6 +9,9 @@
 
 <ion-content padding>
 
+
+
+
     <ion-item>
         <button ion-button round (click)="ligarCelular()">Ligar no celular</button>
     </ion-item>
@@ -16,15 +19,18 @@
         <button ion-button round (click)="ligarFixo()">Ligar no fixo</button>
     </ion-item>
 
-    <form>
-        <ion-item>
-            <ion-label color="primary" position="floating">Deixar Recado</ion-label>
-            <ion-input type="text" required></ion-input>
-        </ion-item>
-        <ion-item>
-            <button ion-button round (click)="enviarSMS()">Enviar SMS</button>
-        </ion-item>
-    </form>
+    <form [formGroup]="recado" (ngSubmit)="enviarSMS()">
+            <ion-label>Deixar Recado</ion-label>
+            <ion-item>
+                <ion-label>Remetente</ion-label>
+                <ion-input type="text" formControlName="remetente"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Mensagem</ion-label>
+                <ion-textarea formControlName="mensagem"></ion-textarea>
+            </ion-item>
+            <button ion-button type="submit" [disabled]="!recado.valid">Enviar</button>
+        </form>
 
 
 
