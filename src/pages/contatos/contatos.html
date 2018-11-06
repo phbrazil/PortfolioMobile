@@ -22,11 +22,11 @@
     <form [formGroup]="recado" (ngSubmit)="enviarSMS()">
             <ion-label>Deixar Recado</ion-label>
             <ion-item>
-                <ion-label>Remetente</ion-label>
+                <ion-label>Remetente: </ion-label>
                 <ion-input type="text" formControlName="remetente"></ion-input>
             </ion-item>
             <ion-item>
-                <ion-label>Mensagem</ion-label>
+                <ion-label>Mensagem: </ion-label>
                 <ion-textarea formControlName="mensagem"></ion-textarea>
             </ion-item>
             <button ion-button type="submit" [disabled]="!recado.valid">Enviar</button>
