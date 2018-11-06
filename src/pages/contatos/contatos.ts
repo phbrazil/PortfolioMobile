@@ -19,7 +19,7 @@ export class ContatosPage {
                 public navCtrl: NavController, private call: CallNumber) {
                 this.recado = this.formBuilder.group({
                         remetente: ['', Validators.required],
-                        mensagem: [''],
+                        mensagem: ['', Validators.required],
                 });
         }
         enviarSMS() {

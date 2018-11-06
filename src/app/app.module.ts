@@ -20,7 +20,7 @@ import { FileTransfer } from '@ionic-native/file-transfer';
 import { DocumentViewer } from '@ionic-native/document-viewer';
 import { CallNumber } from '@ionic-native/call-number';
 import { SMS } from '@ionic-native/sms';
-
+import { ModalController } from 'ionic-angular';
 
 @NgModule({
   declarations: [
@@ -57,7 +57,8 @@ import { SMS } from '@ionic-native/sms';
     File,
     FileTransfer,
     CallNumber,
-    SMS
+    SMS,
+    ModalController
   ]
 })
 export class AppModule {}

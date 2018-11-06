@@ -9,28 +9,32 @@
 
 <ion-content padding>
 
-
-
-
     <ion-item>
-        <button ion-button round (click)="ligarCelular()">Ligar no celular   <ion-icon ios="ios-phone-portrait" md="md-phone-portrait"></ion-icon></button>
+        <button ion-button clear large (click)="ligarCelular()"><strong>Ligar no celular </strong></button>
+        <ion-icon ios="ios-phone-portrait" md="md-phone-portrait"></ion-icon>
     </ion-item>
     <ion-item>
-        <button ion-button round (click)="ligarFixo()">Ligar no fixo <ion-icon ios="ios-call" md="md-call"></ion-icon></button>
+        <button ion-button clear large (click)="ligarFixo()"><strong>Ligar no fixo </strong></button>
+        <ion-icon ios="ios-call" md="md-call"></ion-icon>
     </ion-item>
 
     <form [formGroup]="recado" (ngSubmit)="enviarSMS()">
-            <ion-label>Deixar Recado</ion-label>
-            <ion-item>
-                <ion-label>Remetente: </ion-label>
-                <ion-input type="text" formControlName="remetente" required></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-label>Mensagem: </ion-label>
-                <ion-textarea formControlName="mensagem"></ion-textarea>
-            </ion-item>
-            <button ion-button type="submit" [disabled]="!recado.valid">Enviar <ion-icon ios="ios-paper-plane" md="md-paper-plane"></ion-icon>            </button>
-        </form>
+        <ion-item>
+            <ion-label><strong>Deixar Recado</strong> <ion-icon ios="ios-chatboxes" md="md-chatboxes"></ion-icon>
+            </ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Remetente: </ion-label>
+            <ion-input type="text" placeholder="Deixe seu nome" formControlName="remetente" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Mensagem: </ion-label>
+            <ion-textarea placeholder="Deixe sua mensagem aqui" formControlName="mensagem"></ion-textarea>
+        </ion-item>
+        <button ion-button clear type="submit" large [disabled]="!recado.valid"><strong>Enviar </strong></button>
+        <ion-icon ios="ios-paper-plane" md="md-paper-plane"></ion-icon>
+    </form>
 
 
 
