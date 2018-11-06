@@ -13,23 +13,23 @@
 
 
     <ion-item>
-        <button ion-button round (click)="ligarCelular()">Ligar no celular</button>
+        <button ion-button round (click)="ligarCelular()">Ligar no celular   <ion-icon ios="ios-phone-portrait" md="md-phone-portrait"></ion-icon></button>
     </ion-item>
     <ion-item>
-        <button ion-button round (click)="ligarFixo()">Ligar no fixo</button>
+        <button ion-button round (click)="ligarFixo()">Ligar no fixo <ion-icon ios="ios-call" md="md-call"></ion-icon></button>
     </ion-item>
 
     <form [formGroup]="recado" (ngSubmit)="enviarSMS()">
             <ion-label>Deixar Recado</ion-label>
             <ion-item>
                 <ion-label>Remetente: </ion-label>
-                <ion-input type="text" formControlName="remetente"></ion-input>
+                <ion-input type="text" formControlName="remetente" required></ion-input>
             </ion-item>
             <ion-item>
                 <ion-label>Mensagem: </ion-label>
                 <ion-textarea formControlName="mensagem"></ion-textarea>
             </ion-item>
-            <button ion-button type="submit" [disabled]="!recado.valid">Enviar</button>
+            <button ion-button type="submit" [disabled]="!recado.valid">Enviar <ion-icon ios="ios-paper-plane" md="md-paper-plane"></ion-icon>            </button>
         </form>
 
 
