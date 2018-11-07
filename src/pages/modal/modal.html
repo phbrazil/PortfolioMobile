@@ -39,9 +39,8 @@
     <ion-item >
       Hobbies:
       <!--*ngFor="let hobbies of hobbies ; let i = index"-->
-      <ion-note  item-end>        
-        {{dados[0].hobbies}}
-
+      <ion-note *ngFor="let hobbie of hobbies ; let i = index" item-end>        
+        {{hobbies[i].hobbie}},
       </ion-note>
     </ion-item>
   </ion-list>
