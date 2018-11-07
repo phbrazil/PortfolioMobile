@@ -24,7 +24,7 @@
         <label>{{dados[0].idade}}</label>
       </ion-note>
     </ion-item>
-    <ion-item>
+    <ion-item class='body'>
       Raça:
       <ion-note item-end>
         {{dados[0].raca}}
@@ -38,9 +38,9 @@
     </ion-item>
   </ion-list>
   <ion-card>
-    <ion-card-content>
+    <ion-card-content >
       <ion-label stacked><strong>Hobbies</strong></ion-label>
-      <p><strong>{{hbformat}} </strong></p>
+      <p ion-text color="black" style="background-color: transparent;"><strong>{{hbformat}} </strong></p>
     </ion-card-content>
   </ion-card>
   <!--*ngFor="let hobbies of hobbies ; let i = index"-->

@@ -1,13 +1,10 @@
 page-modal {
 
-    .bg-image{
-        background-image: url('../assets/icon/background.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        opacity: 0.7;
-
-        
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(13, 240, 13);
+        background-color: black;
     }
 
 }

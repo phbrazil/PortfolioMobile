@@ -31,21 +31,19 @@
     <link href="build/main.css" rel="stylesheet">
 
 </head>
-<style>
-    html {
-        background: url('assets/icon/background.jpg') no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: inherit;
-        opacity: 0.8;
-    }
-</style>
 
-<body class='html'>
+
+<!--background="assets/icon/background.jpg" style="opacity: 0.7;background-size: cover; text-decoration-color: green"-->
+
+<body background="assets/icon/background.jpg" style="opacity: 0.7;background-size: cover;">
 
     <!-- Ionic's root component and where the app will load -->
-    <ion-app></ion-app>
+    <ion-app>
+        <script>
+            alert('Bem-Vindo');
+            </script>
+
+    </ion-app>
 
     <!-- The polyfills js is generated during the build process -->
     <script src="build/polyfills.js"></script>

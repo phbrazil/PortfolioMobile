@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header ion-text color="secondary" style="background-color: black;">
     <ion-navbar>
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
@@ -15,17 +15,16 @@
             <ion-avatar item-start>
                 <img src="assets/icon/profile.jpg">
             </ion-avatar>
-            <h2>Paulo Henrique Bezerra</h2>
-            <p>29 de Janeiro de 1990</p>
+            <h2><strong>Paulo Henrique Bezerra</strong></h2>
+            <p><strong>29 de Janeiro de 1990</strong></p>
             <a ion-item (click)="mostrarModal()">
                 Detalhes
             </a>
 
         </ion-item>
 
-
         <ion-card-content>
-            <p><strong>
+            <p ion-text color="black" style="background-color: transparent;"><strong>
                 Paulo é Analista de Sistemas/Dados com experiência profissional
                 de 5 anos em desenvolvimento e implantação de sistemas em Java
                 Web/Dektop usando banco de dados MySQL e PostgreSQL, criação e alteração de
