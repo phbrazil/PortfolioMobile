@@ -15,31 +15,32 @@
   <ion-list>
     <ion-item>
       <ion-avatar item-start>
-        <img src="assets/icon/profile.jpg">
+        <img src={{dados[3]}}>
       </ion-avatar>
-      <h2>Paulo Henrique Bezerra</h2>
+      <h2>{{dados[0]}}</h2>
       </ion-item>
     <ion-item>Idade: 
       <ion-note item-end>
-        28 anos
+        <label>{{dados[1]}}</label>
       </ion-note>
     </ion-item>
     <ion-item>
       Raça:
       <ion-note item-end>
-        Humano
+        {{dados[5]}}
       </ion-note>
     </ion-item>
     <ion-item>
       Ocupação:
       <ion-note item-end>
-        "Estuda" no Senac
+        {{dados[4]}}
       </ion-note>
     </ion-item>
-    <ion-item>
+    <ion-item >
       Hobbies:
-      <ion-note item-end>
-        Fotos, carros, viagem, lanchão
+      <ion-note  *ngFor="let hobbie of hobbies ; let i = index" item-end>
+        {{hobbies[i].hobbie}}
+
       </ion-note>
     </ion-item>
   </ion-list>

@@ -13,30 +13,31 @@ export class HomePage {
 
 
   constructor(public params: NavParams,
-    public myModal: ModalController, 
+    public myModal: ModalController,
     public navCtrl: NavController, private view: ViewController) {
-    
-    var characters = [
-      {
-        name: 'Gollum',
-        quote: 'Sneaky little hobbitses!',
-        image: 'assets/img/avatar-gollum.jpg',
-        items: [
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'River Folk' },
-          { title: 'Alter Ego', note: 'Smeagol' }
-        ]
-      }];
-
 
   }
 
   mostrarModal() {
 
-    this.character = 'Paulo Teste';
 
-    const modal = this.myModal.create("ModalPage",{data: this.character});
-    modal.present();
+    this.navCtrl.push(ModalPage, {
+      name: 'Paulo Henrique Bezerra',
+      idade: '28 anos',
+      frase: 'Se não lembro não fiz',
+      image: 'assets/icon/profile.jpg',
+      ocupacao: '"Estuda" no Senac',
+      raca: 'Humano',
+      hobbies: [{ 'hobbie': 'Carros' },
+      {
+        'hobbie': 'Lanchão'
+      },{
+        'hobbie': 'Fotos' 
+      },{
+        'hobbie': 'Viagem'
+      }
+      ]
+    });
 
   }
 
