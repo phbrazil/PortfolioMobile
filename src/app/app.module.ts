@@ -9,7 +9,7 @@ import { EducacaoPage } from '../pages/educacao/educacao';
 import { CursosPage } from '../pages/cursos/cursos';
 import { HabilidadesPage } from '../pages/habilidades/habilidades';
 import { ContatosPage } from '../pages/contatos/contatos';
-import { ModalPage } from '../pages/modal/modal';
+//import { ModalPage } from '../pages/modal/modal';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,7 +32,7 @@ import { ModalController } from 'ionic-angular';
     CursosPage,
     HabilidadesPage,
     ContatosPage,
-    ModalPage
+    //ModalPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +47,7 @@ import { ModalController } from 'ionic-angular';
     CursosPage,
     HabilidadesPage,
     ContatosPage,
-    ModalPage
+    //ModalPage
   ],
   providers: [
     StatusBar,

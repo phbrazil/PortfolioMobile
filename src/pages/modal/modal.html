@@ -15,31 +15,32 @@
   <ion-list>
     <ion-item>
       <ion-avatar item-start>
-        <img src={{dados[3]}}>
+        <img src={{dados[0].image}}>
       </ion-avatar>
-      <h2>{{dados[0]}}</h2>
+      <h2>{{dados[0].name}}</h2>
       </ion-item>
     <ion-item>Idade: 
       <ion-note item-end>
-        <label>{{dados[1]}}</label>
+        <label>{{dados[0].idade}}</label>
       </ion-note>
     </ion-item>
     <ion-item>
       Raça:
       <ion-note item-end>
-        {{dados[5]}}
+        {{dados[0].raca}}
       </ion-note>
     </ion-item>
     <ion-item>
       Ocupação:
       <ion-note item-end>
-        {{dados[4]}}
+        {{dados[0].ocupacao}}
       </ion-note>
     </ion-item>
     <ion-item >
       Hobbies:
-      <ion-note  *ngFor="let hobbie of hobbies ; let i = index" item-end>
-        {{hobbies[i].hobbie}}
+      <!--*ngFor="let hobbies of hobbies ; let i = index"-->
+      <ion-note  item-end>        
+        {{dados[0].hobbies}}
 
       </ion-note>
     </ion-item>

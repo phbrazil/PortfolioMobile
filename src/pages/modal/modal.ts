@@ -26,16 +26,18 @@ export class ModalPage {
   ) {
 
     
-    let name = params.get('name');
+    /*let name = params.get('name');
     let idade = params.get('idade');
     let frase = params.get('frase');
     let image= params.get('image');
     let ocupacao = params.get('ocupacao');
     let raca = params.get('raca');
-    let hobbie = params.get('hobbies');
+    let hobbie = params.get('hobbies');*/
 
-    this.dados= [name,idade, frase,image, ocupacao,raca];
-    this.hobbies = hobbie;
+    this.dados = params.get('dados');
+
+  //  this.dados= [name,idade, frase,image, ocupacao,raca];
+    //this.hobbies = hobbie;
 
   }
 

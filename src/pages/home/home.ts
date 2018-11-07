@@ -18,7 +18,32 @@ export class HomePage {
 
   }
 
-  mostrarModal() {
+mostrarModal(){
+
+    const data =[{
+        name: 'Paulo Henrique Bezerra',
+        idade: '28 anos',
+        frase: 'Se não lembro não fiz',
+        image: 'assets/icon/profile.jpg',
+        ocupacao: '"Estuda" no Senac',
+        raca: 'Humano',
+        hobbies: 'Lanchão, Fotos, Viagem, Carros'
+      }];
+
+      const modal = this.myModal.create("ModalPage",{dados: data})
+      modal.present();
+
+    }
+
+
+    
+
+}
+
+
+
+
+  /*mostrarModal() {
 
 
     this.navCtrl.push(ModalPage, {
@@ -28,27 +53,11 @@ export class HomePage {
       image: 'assets/icon/profile.jpg',
       ocupacao: '"Estuda" no Senac',
       raca: 'Humano',
-      hobbies: [{ 'hobbie': 'Carros' },
-      {
-        'hobbie': 'Lanchão'
-      },{
-        'hobbie': 'Fotos' 
-      },{
-        'hobbie': 'Viagem'
-      }
-      ]
+      hobbies: 'Lanchão, Fotos, Viagem, Carros'
     });
 
-  }
+  }*/
+
 
 
 }
-
-
-
-
-
-
-
-
-
