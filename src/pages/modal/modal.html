@@ -18,7 +18,7 @@
         <img src="assets/icon/profile.jpg">
       </ion-avatar>
       <h2>Paulo Henrique Bezerra</h2>
-    </ion-item>
+      </ion-item>
     <ion-item>Idade:
       <ion-note item-end>
         28 anos
@@ -43,4 +43,7 @@
       </ion-note>
     </ion-item>
   </ion-list>
+  <ion-row *ngFor="let row of grid" direction="x" style="height:200px; min-height: 200px;">
+    <img ng-repeat="image in images" [(ngModel)]="images" src="{images.src}"/>
+  </ion-row>
 </ion-content>

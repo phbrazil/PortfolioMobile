@@ -16,6 +16,10 @@
                 <img src="assets/icon/profile.jpg">
             </ion-avatar>
             <h2>Paulo Henrique Bezerra</h2>
+            <ion-row *ngFor="let row of grid" direction="x" style="height:200px; min-height: 200px;">
+                <img ng-repeat="image in images" [(ngModel)]="images" src="{images.src}"/>
+              </ion-row>
+          
             <p>29 de Janeiro de 1990</p>
             <a ion-item (click)="mostrarModal()">
                 Mais Detalhes
