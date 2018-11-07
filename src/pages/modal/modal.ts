@@ -17,7 +17,7 @@ import { ModalController, Platform } from 'ionic-angular';
 export class ModalPage {
 
   dados : Array <any> [];
-  hobbies : Array <any> [];
+  hobbies: Array <any>;
   hbformat: string = "";
 
   constructor(
@@ -28,9 +28,12 @@ export class ModalPage {
 
     this.dados = params.get('dados');
     this.hobbies = params.get('hobbies');
-
+    var virgula = ", ";
     for(var i = 0; i<this.hobbies.length;i++){
-     this.hbformat = this.hbformat+this.hobbies[i].hobbie+", ";
+      if(i==this.hobbies.length-1){
+        virgula="";
+      }
+     this.hbformat = this.hbformat+this.hobbies[i].hobbie+virgula;
       
     }
 
