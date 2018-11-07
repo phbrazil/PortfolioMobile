@@ -37,10 +37,12 @@
       </ion-note>
     </ion-item>
   </ion-list>
-  <ion-item>
-    <ion-label floating>Hobbies</ion-label>
-    <ion-textarea [readonly]="readonly"  type="text" value="{{hbformat}}, "></ion-textarea>
-    </ion-item>
+  <ion-card>
+    <ion-card-content>
+      <ion-label stacked><strong>Hobbies</strong></ion-label>
+      <p><strong>{{hbformat}} </strong></p>
+    </ion-card-content>
+  </ion-card>
   <!--*ngFor="let hobbies of hobbies ; let i = index"-->
   <ion-row *ngFor="let row of grid" direction="x" style="height:200px; min-height: 200px;">
     <img ng-repeat="image in images" [(ngModel)]="images" src="{images.src}" />

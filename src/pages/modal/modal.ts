@@ -31,10 +31,11 @@ export class ModalPage {
     var virgula = ", ";
     for(var i = 0; i<this.hobbies.length;i++){
       if(i==this.hobbies.length-1){
-        virgula="";
+        virgula=".";
       }
      this.hbformat = this.hbformat+this.hobbies[i].hobbie+virgula;
-      
+
+     console.log(this.hbformat);
     }
 
   }
