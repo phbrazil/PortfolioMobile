@@ -16,25 +16,13 @@ import { ModalController, Platform } from 'ionic-angular';
 })
 export class ModalPage {
 
-  character;
 
   constructor(
     public platform: Platform,
     public params: NavParams,
     public view: ViewController
   ) {
-    var characters = [
-      {
-        name: 'Gollum',
-        quote: 'Sneaky little hobbitses!',
-        image: 'assets/img/avatar-gollum.jpg',
-        items: [
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'River Folk' },
-          { title: 'Alter Ego', note: 'Smeagol' }
-        ]
-      }];
-    this.character = characters[this.params.get('0')];
+
   }
 
 
