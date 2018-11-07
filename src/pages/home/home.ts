@@ -41,13 +41,19 @@ export class HomePage {
             'hobbie': 'Lanchão'
         },
         {
-            'hobbie': 'Fotos'
+            'hobbie': 'Fotografias'
         },
         {
             'hobbie': 'Viagem'
         },
         {
             "hobbie": 'Carros'
+        },
+        {
+            "hobbie": 'Games'
+        },
+        {
+            "hobbie": 'Séries'
         }];
 
         const modal = this.myModal.create("ModalPage", { dados: data, hobbies: hobbies })

@@ -18,6 +18,7 @@ export class ModalPage {
 
   dados : Array <any> [];
   hobbies : Array <any> [];
+  hbformat: string = "";
 
   constructor(
     public platform: Platform,
@@ -27,6 +28,11 @@ export class ModalPage {
 
     this.dados = params.get('dados');
     this.hobbies = params.get('hobbies');
+
+    for(var i = 0; i<this.hobbies.length;i++){
+     this.hbformat = this.hbformat+this.hobbies[i].hobbie+", ";
+      
+    }
 
   }
 

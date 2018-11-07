@@ -18,8 +18,8 @@
         <img src={{dados[0].image}}>
       </ion-avatar>
       <h2>{{dados[0].name}}</h2>
-      </ion-item>
-    <ion-item>Idade: 
+    </ion-item>
+    <ion-item>Idade:
       <ion-note item-end>
         <label>{{dados[0].idade}}</label>
       </ion-note>
@@ -36,15 +36,17 @@
         {{dados[0].ocupacao}}
       </ion-note>
     </ion-item>
-    <ion-item >
-      Hobbies:
-      <!--*ngFor="let hobbies of hobbies ; let i = index"-->
-      <ion-note *ngFor="let hobbie of hobbies ; let i = index" item-end>        
-        {{hobbies[i].hobbie}},
-      </ion-note>
-    </ion-item>
+
   </ion-list>
+  <ion-card>
+    <ion-label>Hobbies: </ion-label>
+    <ion-card-content>{{hbformat}},
+
+    </ion-card-content>
+    <!--*ngFor="let hobbies of hobbies ; let i = index"-->
+
+  </ion-card>
   <ion-row *ngFor="let row of grid" direction="x" style="height:200px; min-height: 200px;">
-    <img ng-repeat="image in images" [(ngModel)]="images" src="{images.src}"/>
+    <img ng-repeat="image in images" [(ngModel)]="images" src="{images.src}" />
   </ion-row>
 </ion-content>
