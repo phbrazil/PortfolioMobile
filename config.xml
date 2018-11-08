@@ -93,4 +93,5 @@
     <plugin name="cordova-sms-plugin" spec="0.1.13" />
     <engine name="ios" spec="4.5.5" />
     <engine name="android" spec="7.1.1" />
+    <plugin name="cordova-plugin-flashlight" spec="3.2.0" />
 </widget>

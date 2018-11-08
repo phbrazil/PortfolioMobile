@@ -9,7 +9,7 @@ import { EducacaoPage } from '../pages/educacao/educacao';
 import { CursosPage } from '../pages/cursos/cursos';
 import { HabilidadesPage } from '../pages/habilidades/habilidades';
 import { ContatosPage } from '../pages/contatos/contatos';
-//import { ModalPage } from '../pages/modal/modal';
+import { FlashPage } from '../pages/flash/flash';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,6 +22,7 @@ import { DocumentViewer } from '@ionic-native/document-viewer';
 import { CallNumber } from '@ionic-native/call-number';
 import { SMS } from '@ionic-native/sms';
 import { ModalController } from 'ionic-angular';
+import { Flashlight } from '@ionic-native/flashlight';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { ModalController } from 'ionic-angular';
     CursosPage,
     HabilidadesPage,
     ContatosPage,
-    //ModalPage
+    FlashPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +48,7 @@ import { ModalController } from 'ionic-angular';
     CursosPage,
     HabilidadesPage,
     ContatosPage,
-    //ModalPage
+    FlashPage
   ],
   providers: [
     StatusBar,
@@ -61,7 +62,8 @@ import { ModalController } from 'ionic-angular';
     FileTransfer,
     CallNumber,
     SMS,
-    ModalController
+    ModalController,
+    Flashlight
   ]
 })
 export class AppModule {}
