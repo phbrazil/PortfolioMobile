@@ -61,6 +61,20 @@ export class HomePage {
 
     }
 
+    mostrarFoto() {
+
+        console.log('cheguei aqui');
+
+        const foto = [{
+            image: 'assets/icon/profile.jpg',
+        }];
+
+        const fototela = this.myModal.create("FotoPage", { foto: foto})
+        fototela.present();
+
+    }
+
+
     /*mostrarModal() {
   
       this.navCtrl.push(ModalPage, {
