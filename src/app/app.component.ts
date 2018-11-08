@@ -9,7 +9,7 @@ import { EducacaoPage } from '../pages/educacao/educacao';
 import { CursosPage } from '../pages/cursos/cursos';
 import { HabilidadesPage } from '../pages/habilidades/habilidades';
 import { ContatosPage } from '../pages/contatos/contatos';
-import { FlashPage } from '../pages/flash/flash';
+//import { FlashPage } from '../pages/flash/flash';
 
 @Component({
   templateUrl: 'app.html'
@@ -31,8 +31,8 @@ export class MyApp {
       { title: 'Educação', component: EducacaoPage, icon: 'home' },
       { title: 'Cursos', component: CursosPage, icon: 'home' },
       { title: 'Habilidades', component: HabilidadesPage, icon: 'home' },
-      { title: 'Contatos', component: ContatosPage, icon: 'home' },
-      { title: 'Lanterna', component: FlashPage, icon: 'flash' }
+      { title: 'Contatos', component: ContatosPage, icon: 'home' }
+      //{ title: 'Lanterna', component: FlashPage, icon: 'home' }
 
     ];
 
