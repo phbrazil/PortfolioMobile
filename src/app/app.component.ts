@@ -26,13 +26,13 @@ export class MyApp {
 
     // used for an example of   ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage, icon: 'calendar' },
-      { title: 'Experiência', component: ExperienciaPage, icon: 'home' },
-      { title: 'Educação', component: EducacaoPage, icon: 'home' },
-      { title: 'Cursos', component: CursosPage, icon: 'home' },
-      { title: 'Habilidades', component: HabilidadesPage, icon: 'home' },
-      { title: 'Contatos', component: ContatosPage, icon: 'home' },
-      { title: 'Lanterna', component: FlashPage, icon: 'home' }
+      { title: 'Home', component: HomePage, icon: 'assets/icon/home.png' },
+      { title: 'Experiência', component: ExperienciaPage, icon: 'assets/icon/experience.png' },
+      { title: 'Educação', component: EducacaoPage, icon: 'assets/icon/education.png' },
+      { title: 'Cursos', component: CursosPage, icon: 'assets/icon/courses.png' },
+      { title: 'Habilidades', component: HabilidadesPage, icon: 'assets/icon/habilities.jpeg' },
+      { title: 'Contatos', component: ContatosPage, icon: 'assets/icon/contacts.png' },
+      { title: 'Lanterna', component: FlashPage, icon: 'assets/icon/flashlight.jpg' }
 
     ];
 
