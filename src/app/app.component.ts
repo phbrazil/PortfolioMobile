@@ -10,6 +10,7 @@ import { CursosPage } from '../pages/cursos/cursos';
 import { HabilidadesPage } from '../pages/habilidades/habilidades';
 import { ContatosPage } from '../pages/contatos/contatos';
 import { FlashPage } from '../pages/flash/flash';
+import { MaisPage } from '../pages/mais/mais';
 
 @Component({
   templateUrl: 'app.html'
@@ -32,7 +33,8 @@ export class MyApp {
       { title: 'Cursos', component: CursosPage, icon: 'assets/icon/courses.png' },
       { title: 'Habilidades', component: HabilidadesPage, icon: 'assets/icon/habilities.jpeg' },
       { title: 'Contatos', component: ContatosPage, icon: 'assets/icon/contacts.png' },
-      { title: 'Lanterna', component: FlashPage, icon: 'assets/icon/flashlight.jpg' }
+      { title: 'Lanterna', component: FlashPage, icon: 'assets/icon/flashlight.jpg' },
+      { title: 'Mais', component: MaisPage, icon: 'assets/icon/mais.png' }
 
     ];
 

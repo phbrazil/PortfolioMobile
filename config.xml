@@ -92,6 +92,7 @@
     <plugin name="mx.ferreyra.callnumber" spec="~0.0.2" />
     <plugin name="cordova-sms-plugin" spec="0.1.13" />
     <plugin name="cordova-plugin-flashlight" spec="3.2.0" />
+    <plugin name="cordova-plugin-email-composer" spec="0.8.15" />
     <engine name="ios" spec="4.5.5" />
     <engine name="android" spec="7.1.1" />
 </widget>
