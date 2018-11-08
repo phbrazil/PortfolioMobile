@@ -23,7 +23,8 @@ export class ModalPage {
   constructor(
     public platform: Platform,
     public params: NavParams,
-    public view: ViewController
+    public view: ViewController,
+    public myModal: ModalController,
   ) {
 
     this.dados = params.get('dados');
@@ -39,6 +40,19 @@ export class ModalPage {
     }
 
   }
+
+  mostrarFoto() {
+
+    console.log('cheguei aqui');
+
+    const foto = [{
+        image: 'assets/icon/profile.jpg',
+    }];
+
+    const fototela = this.myModal.create("FotoPage", { foto: foto})
+    fototela.present();
+
+}
 
 
   ionViewDidLoad() {

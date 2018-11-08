@@ -15,7 +15,7 @@
   <ion-list>
     <ion-item>
       <ion-avatar item-start>
-        <img src={{dados[0].image}}>
+        <img (click)="mostrarFoto()" src={{dados[0].image}}>
       </ion-avatar>
       <h2>{{dados[0].name}}</h2>
     </ion-item>
