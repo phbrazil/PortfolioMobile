@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform, Icon } from 'ionic-angular';
+import { ModalController, Nav, Platform, Icon } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -9,7 +9,7 @@ import { EducacaoPage } from '../pages/educacao/educacao';
 import { CursosPage } from '../pages/cursos/cursos';
 import { HabilidadesPage } from '../pages/habilidades/habilidades';
 import { ContatosPage } from '../pages/contatos/contatos';
-//import { FlashPage } from '../pages/flash/flash';
+import { FlashPage } from '../pages/flash/flash';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,7 +21,7 @@ export class MyApp {
 
   pages: Array<{title: string, component: any, icon: string}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(private myModal: ModalController, public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of   ngFor and navigation
@@ -31,12 +31,18 @@ export class MyApp {
       { title: 'Educação', component: EducacaoPage, icon: 'home' },
       { title: 'Cursos', component: CursosPage, icon: 'home' },
       { title: 'Habilidades', component: HabilidadesPage, icon: 'home' },
-      { title: 'Contatos', component: ContatosPage, icon: 'home' }
-      //{ title: 'Lanterna', component: FlashPage, icon: 'home' }
+      { title: 'Contatos', component: ContatosPage, icon: 'home' },
+      { title: 'Lanterna', component: FlashPage, icon: 'home' }
 
     ];
 
   }
+
+  menuLanterna() {
+    const lanterna = this.myModal.create("FlashPage");
+    lanterna.present();
+
+}
 
   initializeApp() {
     this.platform.ready().then(() => {

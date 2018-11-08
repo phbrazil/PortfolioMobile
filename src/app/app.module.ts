@@ -9,7 +9,7 @@ import { EducacaoPage } from '../pages/educacao/educacao';
 import { CursosPage } from '../pages/cursos/cursos';
 import { HabilidadesPage } from '../pages/habilidades/habilidades';
 import { ContatosPage } from '../pages/contatos/contatos';
-//import { FlashPage } from '../pages/flash/flash';
+import { FlashPage } from '../pages/flash/flash';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -33,7 +33,7 @@ import { Flashlight } from '@ionic-native/flashlight';
     CursosPage,
     HabilidadesPage,
     ContatosPage,
-    //FlashPage
+    FlashPage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +48,7 @@ import { Flashlight } from '@ionic-native/flashlight';
     CursosPage,
     HabilidadesPage,
     ContatosPage,
-    //FlashPage
+    FlashPage
   ],
   providers: [
     StatusBar,
