@@ -19,6 +19,7 @@ export class HomePage {
     }
 
     mostrarModal() {
+        
 
         const data = [{
             name: 'Paulo Henrique Bezerra',
