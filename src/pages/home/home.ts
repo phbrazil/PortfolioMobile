@@ -25,7 +25,7 @@ export class HomePage {
             name: 'Paulo Henrique Bezerra',
             idade: '28 anos',
             frase: 'Se não lembro não fiz',
-            image: 'assets/icon/profile.jpg',
+            image: 'assets/icon/perfil.png',
             ocupacao: '"Estuda" no Senac',
             raca: 'Humano'
         },
@@ -33,7 +33,7 @@ export class HomePage {
             name: 'Paulo Henrique Bezerra 2',
             idade: '28 anos 2',
             frase: 'Se não lembro não fiz',
-            image: 'assets/icon/profile.jpg',
+            image: 'assets/icon/perfil.png',
             ocupacao: '"Estuda" no Senac',
             raca: 'Humano'
         }];
@@ -64,10 +64,8 @@ export class HomePage {
 
     mostrarFoto() {
 
-        console.log('cheguei aqui');
-
         const foto = [{
-            image: 'assets/icon/profile.jpg',
+            image: 'assets/icon/perfil.png',
         }];
 
         const fototela = this.myModal.create("FotoPage", { foto: foto})
